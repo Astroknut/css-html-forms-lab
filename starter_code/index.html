@@ -106,13 +106,42 @@
 			// results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
 			// results.className = 'container results';
 			// main.appendChild(results);
-		};
+		}
+
+	         
 
 		$("form").on("submit", function(event){
 		// Stop the form from submitting
 			event.preventDefault();
-		// Run the 'makeResults' function seen above
+			makeResults();
 		
+		// Run the 'makeResults' function seen above
+
+		//Create variables for results
+			var $result1 = $("#name").val();
+			var $result2 = $("#verb-1 option:selected").val();
+			var $result3 = $("#mission").val();
+			var $result4 = $('input[name=sentiment]:checked').val();
+			var $result5 = $("#noun-1").val();
+			var $result6 = $('input[name=adjective-2]:checked').map(function() {return this.value;}).get().join(', ');
+			var $result7 = $('#noun-2').val();
+
+			$(main).append("<p>Once upon a time there was a Developer named " + $result1 + ".</p>");
+
+			$(main).append("<p>" + $result1 + " came to General Assembly to " + $result2 + " the great mountain of programming knowledge.</p>");
+
+			$(main).append("<p>" + $result3 + ", " + $result1 + " shouted.</p>");
+
+			$(main).append("<p>Though " + $result4 + ", " + $result1 + " was able to overcome all obstacles with the power of their " + $result5 + ".<p>");
+
+			$(main).append("<p>In the end, their success can be contributed entirely to their " + $result6 + " " + $result7 + ".<p>");
+
+
+
+
+
+
+			
 
 	    	/*
 			
@@ -130,6 +159,7 @@
 
 	    	*/ 
 		});
+		
 	</script>
 
 </body>
