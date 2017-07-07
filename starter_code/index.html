@@ -3,6 +3,7 @@
 <head>
 	<title>CSS HTML Forms Lab</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:300,500,600,700,900" rel="stylesheet">
 </head>
 <body>
 	<section id="main">
@@ -127,15 +128,15 @@
 			var $result6 = $('input[name=adjective-2]:checked').map(function() {return this.value;}).get().join(', ');
 			var $result7 = $('#noun-2').val();
 
-			$(main).append("<p>Once upon a time there was a Developer named " + $result1 + ".</p>");
+			$('.container.results').append("<p>Once upon a time there was a Developer named " + $result1 + ".</p>");
 
-			$(main).append("<p>" + $result1 + " came to General Assembly to " + $result2 + " the great mountain of programming knowledge.</p>");
+			$('.container.results').append("<p>" + $result1 + " came to General Assembly to " + $result2 + " the great mountain of programming knowledge.</p>");
 
-			$(main).append("<p>" + $result3 + ", " + $result1 + " shouted.</p>");
+			$('.container.results').append("<p>" + $result3 + ", " + $result1 + " shouted.</p>");
 
-			$(main).append("<p>Though " + $result4 + ", " + $result1 + " was able to overcome all obstacles with the power of their " + $result5 + ".<p>");
+			$('.container.results').append("<p>Though " + $result4 + ", " + $result1 + " was able to overcome all obstacles with the power of their " + $result5 + ".<p>");
 
-			$(main).append("<p>In the end, their success can be contributed entirely to their " + $result6 + " " + $result7 + ".<p>");
+			$('.container.results').append("<p>In the end, their success can be contributed entirely to their " + $result6 + " " + $result7 + ".<p>");
 
 
 
