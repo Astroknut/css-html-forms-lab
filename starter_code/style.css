@@ -38,15 +38,20 @@ h1 {
 	background-image: center;
 }
 
-.container {
+.container.results {
 	border: 2px solid;
-	border-radius: 3px;
+	border-radius: 2px;
 	max-width: 48%;
+	margin: 0 10px;
 }
 
 input {
 	border: 2px solid;
 	border-radius: 3px;
+}
+
+select {
+	width: 100%;
 }
 
 .container.results {
@@ -55,16 +60,22 @@ input {
 	background-color: #C8DBB3;
 }
 
+#noun-1, #noun-2, #name {
+	width: 100%;
+}
+
 textarea {
 	min-height: 100px;
+	width: 100%;
 }
 
 input[type="submit"] {
 	float: right;
-	font-weight: 700;
+	font-weight: 900;
 	background-color: rgba(39,208,127,0.5);
 	min-height: 48px;
 	padding: 14px;
+	display: inline-block;
 	
 }
 
